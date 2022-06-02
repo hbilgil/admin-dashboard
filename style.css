@@ -145,7 +145,7 @@ img[class="account-pic-large"] { /*large user account photo*/
   color: black;
 }
 
-/*sidebar*/
+/*------SIDEBAR-DIV-----*/
 /*grid layout design & flex-box properties will be used together at sidebar division*/
 
 .sidebar {
@@ -216,5 +216,67 @@ img[src="./icons/dashboard.png"] { /*larger icon for title*/
   height: 2rem;
   width: auto;
 }
+
+/*------MAIN-DIV-----*/
+
+.main {
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+/*Projects section*/
+/*grid (MOSTLY) & flex-box layout design properties will be used together at projects section division*/
+
+.projects {
+  grid-column: 1 / 2; /*exact place of projects div*/
+}
+
+.projects > h3 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.project-cards {
+  display: grid; /*a new grid inside the grid layout of the body container*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*column number is determined according to browser width*/
+  grid-auto-rows: 1fr; /*if needed more rows will be added on*/
+  gap: 2rem 1.5rem;
+}
+
+.project-card {
+  display: grid; /*a new grid inside the grid layout of the project-cards container*/
+  grid-template-rows: 1fr 1fr 1fr; /*3 rows allocated*/
+  border-left: 10px solid orange;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 3px 1px gray;
+}
+
+.project-card:hover { /*when mouse moved around project-cards*/ /*a better UX design*/
+  transition: 0.2s;
+  transform: scale(1.01);
+}
+
+.card-title {
+  padding: 1rem 1rem 0;
+  font-size: 16px;
+}
+
+.card-text {
+  padding: 1rem;
+  font-size: 12px;
+}
+
+.card-buttons {
+  display: flex; /*project card icons will be in the same line*/
+  justify-content: flex-end; /*pushing the items at the end of the line*/
+  gap: 1rem;
+  padding: 1rem;
+}
+
 
 
