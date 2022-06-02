@@ -9,36 +9,384 @@
 </head>
 
 <body>
-    <div class="container">
 
-      <div class="header">
-        Header
+  <div class="container">
+
+    <div class="header">
+
+      <div class="header-top">
+
+        <div class="search-bar">
+
+          <label for="search"><img src="./icons/search.png" alt="Search"></label>
+          <input type="text" id="search" name="search">
+
+        </div>
+          
+        <div class="info-bar">
+
+          <a href="#" class="notification-link"><img class="notification-bell" src="./icons/bell.png" alt="Notification"></a>
+          <div class="account-info">
+            <img class="account-pic-small" src="./profile pics/@morgan.jpeg" alt="account-pic">
+            <p class="account-name">Morgan Oakley</p>
+          </div>
+            
+        </div>
+
       </div>
 
-      <div class="sidebar">
-        Sidebar
+      <div class="header-bottom">
+
+        <div class="account">
+
+          <img class="account-pic-large" src="./profile pics/@morgan.jpeg" alt="account-pic"/>
+          <div class="account-name">
+            <p class="greeting-message">Hi there,</p>
+            <p class="name">Morgan Oakley (@morgan)</p>
+          </div>
+
+        </div>
+
+        <div class="buttons">
+
+          <button class="header-button">New</button>
+          <button class="header-button">Upload</button>
+          <button class="header-button">Share</button>
+
+        </div>
+
       </div>
-
-      <div class="main">
-        Main
-      </div>
-
-      <div class="footer">
-
-        <p>
-            Copyright ©
   
-            <script>
-              document.write(new Date().getFullYear())
-            </script>
+    </div>
 
-          <a href="https://github.com/hbilgil" target="_blank"> Halil Bilgil </a>
+    <div class="sidebar">
 
-        </p>
+      <div class="sidebar-title">
+        <img src="./icons/dashboard.png" alt="Dashboard">
+        <h3>Dashboard</h3>
+      </div>
+
+      <ul class="sidebar-nav">
+
+        <li class="nav-item"> 
+          <a href="#" class="nav-link"><img src="./icons/home.png" alt="Home">    Home</a>
+        </li>
+
+        <li class="nav-item"> 
+          <a href="#" class="nav-link"><img src="./icons/profile.png" alt="Profile">    Profile</a>
+        </li>
+
+        <li class="nav-item"> 
+          <a href="#" class="nav-link"><img src="./icons/messages.png" alt="Messages">    Messages</a>
+        </li>
+
+        <li class="nav-item"> 
+          <a href="#" class="nav-link"><img src="./icons/history.png" alt="History">    History</a>
+        </li>
+
+        <li class="nav-item"> 
+          <a href="#" class="nav-link"><img src="./icons/tasks.png" alt="Tasks">    Tasks</a>
+        </li>
+
+        <li class="nav-item"> 
+          <a href="#" class="nav-link"><img src="./icons/community.png" alt="Communities">  Communities</a>
+        </li>
+      
+      </ul>
+
+      <ul class="sidebar-branding">
+
+        <li class="branding-item">
+          <a href="#" class="branding-link"><img src="./icons/settings.png" alt="Settings">    Settings</a>
+        </li>
+
+        <li class="branding-item">
+          <a href="#" class="branding-link"><img src="./icons/support.png" alt="Support">    Support</a>
+        </li>
+
+        <li class="branding-item">
+          <a href="#" class="branding-link"><img src="./icons/privacy.png" alt="Privacy">    Privacy</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="main">
+
+      <div class="projects">
+
+        <h3>Your Projects</h3>
+        <div class="project-cards">
+
+          <div class="project-card">
+
+            <h5 class="card-title">Super Cool Project</h5>
+            <p class="card-text">
+              Sed tempus ut lacus ut scelerisque.
+              Suspendisse sollicitudin nibh erat, id
+              facilisis felis accumsan nec.
+            </p>
+            <ul class="card-buttons">
+
+              <li class="starring">
+                <a href="#" class="starring-link"><img src="./icons/star.png" alt="Starring"></a>
+              </li>
+
+              <li class="following">
+                <a href="#" class="following-link"><img src="./icons/eye.png" alt="Following"></a>
+              </li>
+
+              <li class="sharing">
+                <a href="#" class="sharing-link"><img src="./icons/share.png" alt="Sharing"></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="project-card">
+
+            <h5 class="card-title">Less Cool Project</h5>
+            <p class="card-text">
+              Nullam condimentum ipsum ut lectus vehicula
+              consectetur. Quisque sed dolor tincidunt,
+              consectetur sapien et, facilisis dolor. Duis sem
+              purus, dignissim ut sapien in, varius
+              pellentesque lacus.
+            </p>
+            <ul class="card-buttons">
+
+              <li class="starring">
+                <a href="#" class="starring-link"><img src="./icons/star.png" alt="Starring"></a>
+              </li>
+
+              <li class="following">
+                <a href="#" class="following-link"><img src="./icons/eye.png" alt="Following"></a>
+              </li>
+
+              <li class="sharing">
+                <a href="#" class="sharing-link"><img src="./icons/share.png" alt="Sharing"></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="project-card">
+
+            <h5 class="card-title">Impossible App</h5>
+            <p class="card-text">
+              In hac habitasse platea dictumst. Vivamus
+              dictum rutrum arcu, a placerat velit sagittis
+              id.
+            </p>
+            <ul class="card-buttons">
+
+              <li class="starring">
+                <a href="#" class="starring-link"><img src="./icons/star.png" alt="Starring"></a>
+              </li>
+
+              <li class="following">
+                <a href="#" class="following-link"><img src="./icons/eye.png" alt="Following"></a>
+              </li>
+
+              <li class="sharing">
+                <a href="#" class="sharing-link"><img src="./icons/share.png" alt="Sharing"></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="project-card">
+
+            <h5 class="card-title">Easy Peasy App</h5>
+            <p class="card-text">
+              Etiam cursus eros ac efficitur fringilla.
+              Vestibulum dignissim urna get accumsan
+              aliquam. Curabitur dignissim nisi in tortor
+              commodo, ac bibendum magna tincidunt.
+            </p>
+            <ul class="card-buttons">
+
+              <li class="starring">
+                <a href="#" class="starring-link"><img src="./icons/star.png" alt="Starring"></a>
+              </li>
+
+              <li class="following">
+                <a href="#" class="following-link"><img src="./icons/eye.png" alt="Following"></a>
+              </li>
+
+              <li class="sharing">
+                <a href="#" class="sharing-link"><img src="./icons/share.png" alt="Sharing"></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="project-card">
+
+            <h5 class="card-title">Ad Blocker</h5>
+            <p class="card-text">
+              Quisque eget rutrum isl. Nam auque
+              justo, cursus vitae metus vel, pharetra
+              hendrerit felis. Aliquam sed malesuada
+              eros.
+            </p>
+            <ul class="card-buttons">
+
+              <li class="starring">
+                <a href="#" class="starring-link"><img src="./icons/star.png" alt="Starring"></a>
+              </li>
+
+              <li class="following">
+                <a href="#" class="following-link"><img src="./icons/eye.png" alt="Following"></a>
+              </li>
+
+              <li class="sharing">
+                <a href="#" class="sharing-link"><img src="./icons/share.png" alt="Sharing"></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="project-card">
+
+            <h5 class="card-title">Money Maker</h5>
+            <p class="card-text">
+              Present convallis, libero quis congue
+              elementum, nunc ante faucibus sapien, ac
+              scelerisque tortor purus sit amet ex.
+              Pellentesque mollis nec sem vel aliquam
+            </p>
+            <ul class="card-buttons">
+
+              <li class="starring">
+                <a href="#" class="starring-link"><img src="./icons/star.png" alt="Starring"></a>
+              </li>
+
+              <li class="following">
+                <a href="#" class="following-link"><img src="./icons/eye.png" alt="Following"></a>
+              </li>
+
+              <li class="sharing">
+                <a href="#" class="sharing-link"><img src="./icons/share.png" alt="Sharing"></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="announcements-trending">
+
+        <div class="announcements">
+          <h3>Announcements</h3>
+          <ul class="card">
+
+            <li class="announcement-1">
+              <h5 class="card-title">Site Maintenance</h5>
+              <p class="card-text">
+              Vestibulum condimentum tells lacus,
+              in accumsan elit maximus ac. Donec
+              hendrerit sodales congue...
+              </p>
+            </li>
+
+            <li class="announcement-2">
+              <h5 class="card-title">Community Share Day</h5>
+              <p class="card-text">
+              Nam vel lectus tincidunt, rutrum nulla
+              eu, ornare libero. Aliquam dictum
+              accumsan porttitor...
+              </p>
+            </li>
+
+            <li class="announcement-3">
+              <h5 class="card-title">Updated Privacy Policy</h5>
+              <p class="card-text">
+              Phasellus efficitur nisi get elit
+              consectetur, eget condimentum ante
+              auctor. Cras fringilla sagittis sem in
+              mattis...
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="trending">
+          <h3>Trending</h3>
+          <ul class="card">
+
+            <li class="trending-1">
+              <a href="#" class="trending-1-link">
+                <img src="./profile pics/@tegan.jpeg" alt="Tegan">
+                <div class="trending-profiles-info">
+                  <p class="trending-profiles-info-bold">@tegan</p>
+                  <p class="trending-profiles-info-normal">World Peace Builder</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="trending-2">
+              <a href="#" class="trending-2-link">
+                <img src="./profile pics/@morgan.jpeg" alt="Morgan">
+                <div class="trending-profiles-info">
+                  <p class="trending-profiles-info-bold">@morgan</p>
+                  <p class="trending-profiles-info-normal">Super Cool Project</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="trending-3">
+              <a href="#" class="trending-3-link">
+                <img src="./profile pics/@kendall.jpeg" alt="Kendall">
+                <div class="trending-profiles-info">
+                  <p class="trending-profiles-info-bold">@kendall</p>
+                  <p class="trending-profiles-info-normal">Life Changing App</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="trending-4">
+              <a href="#" class="trending-4-link">
+                <img src="./profile pics/@alex.jpeg" alt="Alex">
+                <div class="trending-profiles-info">
+                  <p class="trending-profiles-info-bold">@alex</p>
+                  <p class="trending-profiles-info-normal">No Traffic Maker</p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
 
       </div>
 
     </div>
+
+    <div class="footer">
+
+      <p>Copyright ©
+  
+        <script>document.write(new Date().getFullYear())</script>
+
+        <a href="https://github.com/hbilgil" target="_blank"> Halil Bilgil </a>
+
+      </p>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
