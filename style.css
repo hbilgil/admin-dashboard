@@ -278,5 +278,99 @@ img[src="./icons/dashboard.png"] { /*larger icon for title*/
   padding: 1rem;
 }
 
+/*Announcement & Trending section*/
+/*grid & flex-box (MOSTLY) layout design properties will be used together at this section*/
+
+.announcements-trending {
+  grid-column: 2 / 3; /*exact place of announcements & trending div*/
+  display: grid; /*a new grid inside the grid layout of the body container*/
+  grid-template-rows: 1fr auto; /*2 rows allocated*/
+}
+
+.announcements-trending h3 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.announcements {
+  grid-row: 1 / 2; /*exact place of announcement card*/
+  display: flex; /*flex property for the growth value inside the div*/
+  flex-direction: column; /*items will be in list format*/
+}
+
+.announcement-1,
+.announcement-2,
+.announcement-3 {
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 1; /*flex-grow value to grow when browser width decreases*/
+}
+
+.announcement-1,
+.announcement-2 {
+  border-bottom: 1px dotted gainsboro;
+  padding-bottom: 0.5rem;
+}
+
+.announcement-3 {
+  padding-bottom: 1rem;
+}
+
+.card {
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 3px 1px gray;
+}
+
+.trending {
+  grid-row: 2 / 3; /*exact place of trending card*/
+  display: flex; /*flex property for the growth value inside the div*/
+  flex-direction: column; /*items will be in list format*/
+  align-self: flex-end; /*the div will be in-line with the bottom of the main container*/
+}
+
+.trending .card {
+  padding: 1rem;
+}
+
+.trending-1,
+.trending-2,
+.trending-3,
+.trending-4 {
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 1; /*flex-grow value to grow when browser width decreases*/
+}
+
+.trending img { /*large user account photo*/
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #38bdf8;
+  border-radius: 50%; /*making it a complete circle in shape*/
+}
+
+.trending li {
+  padding: 0.5rem;
+}
+
+.trending a {
+  display: flex; /*profile pics and profile infos will be in the same line*/
+  align-items: center; /*items will be inline with each other*/
+  color: black;
+}
+
+.trending p {
+  margin-left: 10px;
+}
+
+.trending p + p {
+  color: gray;
+}
+
+.trending-profiles-info-bold {
+  font-weight: 800;
+}
+
 
 
