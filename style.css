@@ -82,3 +82,66 @@ img[class="account-pic-small"] { /*small user account photo*/
 p.account-name {
   font-weight: 800;
 }
+
+/*header-bottom*/
+/*flex-box layout design properties will be used at header division*/
+
+.header-bottom {
+  display: flex;
+  gap: 170px;
+  padding: 20px;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: space-between; /*pushing items through the frontier of bottom section div*/
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+img[class="account-pic-large"] { /*large user account photo*/
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid #38bdf8;
+  border-radius: 50%; /*making it a complete circle in shape*/
+}
+
+.account-name {
+  line-height: 30px; /*allowing to increase space between the 2 different paragraphs*/
+  font-weight: 800;
+}
+
+.greeting-message {
+  font-size: 12px;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.buttons {
+  flex: 1; /*enlarging the buttons div for a better UI*/
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-button {
+  color: white;
+  background-color: #38bdf8;
+  border: none;
+  width: 6rem;
+  height: 2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.header-button:hover { /*when mouse moved around the header-buttons*/
+  color: black;
+}
+
