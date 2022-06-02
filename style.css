@@ -145,3 +145,76 @@ img[class="account-pic-large"] { /*large user account photo*/
   color: black;
 }
 
+/*sidebar*/
+/*grid layout design & flex-box properties will be used together at sidebar division*/
+
+.sidebar {
+  background-color: #38bdf8;
+  grid-row: 1 / 3; /*exact place of sidebar*/
+  display: grid; /*a new grid inside the grid layout of the body container*/
+  grid-template-rows: auto auto 1fr; /*3 rows allocated*/
+  align-items: start; /*will push the items at the top of the division for a better UI*/
+  gap: 30px;
+}
+
+.sidebar-title {
+  display: flex; /*icon and text will be in the same line*/
+  align-items: center; /*items will be in-line with each other*/
+  color: white;
+  font-weight: 800;
+  gap: 10px;
+  padding: 20px;
+  font-size: 26px;
+}
+
+.sidebar-nav,
+.sidebar-branding {
+  display: grid;
+  align-items: center; /*items will be in-line with each other*/
+  gap: 20px;
+  padding: 20px;
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+li {
+  list-style-type: none; /*list items without a marker*/
+}
+
+a {
+  text-decoration: none; /*list item without underlined links*/
+  color: white;
+}
+
+a:hover { /*when mouse moved around list items*/
+  color: black;
+}
+
+a:active { /*when mouse clicked linked items*/
+  transform: scale(0.98);
+}
+
+.nav-link { 
+  display: flex; /*icon and text will be in the same line*/
+  align-items: center; /*items will be in-line with each other*/
+  gap: 10px;
+}
+
+.branding-link {
+  display: flex; /*icon and text will be in the same line*/
+  align-items: center; /*items will be in-line with each other*/
+  gap: 10px;
+}
+
+.sidebar img {
+  filter:invert(); /*color for png images is returned into white*/
+}
+
+img[src="./icons/dashboard.png"] { /*larger icon for title*/
+  height: 2rem;
+  width: auto;
+}
+
+
